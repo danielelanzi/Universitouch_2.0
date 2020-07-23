@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("../img/Web_home_page.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 1023px){
+
+  .container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 999;
+    border: 1px solid whitesmoke;
+  }
+
+  .nav_left {
+    width: auto;
+    display: inline-grid;
+  }
+
+  .ul_left img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .ul_left li, .ul_right li{
+    padding: 10%;
+  }
+
+  .ul_left, .ul_right{
+    list-style: none;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ul_right li:hover{
+    background-color: #efefefa8;
+  }
+
+
+
+  .ul_right li a{
+    color: #0e0b0ba1;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+  .ul_right li a:last-child{
+    margin-right: 5px;
+  }
+
+  /* BURGER MENU */
+  .icon{
+    color: white;
+  }
+
+  .top_nav{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #dedddd;
+    width: 200px;
+    margin-top: 45px;
+    position: fixed;
+}
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav #myLinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .topnav #myLinks li {
+    list-style: none;
+    padding: 14px 16px;
+  }
+
+  .topnav #myLinks li:hover {
+    background-color: #efefefa8;
+  }
+  .topnav #myLinks li a:hover {
+    background-color: #efefefa8;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /* BURGER MENU */
+
+  .jumbotron{
+    margin: 10% 20% 0 20%;
+    text-align: center;
+  }
+
+  .jumbotron .bar_search {
+    margin: 10px auto;
+
+  }
+
+  .img1{
+    height: 250px;
+    width: 250px;
+  }
+
+  .img2{
+    width: 500px;
+  }
+
+  h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  h1 span{
+    color: darkblue;
+  }
+
+  h2{
+    margin-top: 3%;
+    color: white;
+    font-weight: lighter;
+  }
+
+  .bar_search{
+    display: flex;
+    padding: 10px;
+    margin-top: 5%;
+    margin-right: 25%;
+    margin-bottom: 25%;
+    background-color: whitesmoke;
+    opacity: 1;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+
+
+  .search{
+    display: inline-block;
+  }
+
+  .search input{
+    border: none;
+    background-color: whitesmoke;
+    opacity: 1;
+    height: 30px;
+    vertical-align: sub;
+    color: grey;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 820px;
+  }
+
+  .icon_search{
+    display: inline-block;
+    color: grey;
+    height: 30px;
+    vertical-align: text-top;
+    font-size: 25px;
+  }
+
+
+  .choice_bar {
+    margin: 50px 0;
+  }
+
+  .choice li {
+    display: inline;
+    padding: 20px;
+    border-right: 1px solid white;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+  }
+
+  .choice li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+
+  .banner{
+    background-color: white;
+    margin-top: 150px;
+  }
+
+  .banner h2{
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+  }
+
+  .test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .test a{
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: #3ff9e8a8;
+    font-size: 20px;
+  }
+
+
+  /* FORM Mail */
+  .container_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px;
+  }
+
+  .box_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    width: 600px;
+    padding: 50px;
+  }
+
+  form {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  form h2 {
+    font-size: 40px;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form p {
+    text-align: center;
+    color: grey;
+  }
+
+  .input_label{
+    margin-top: 30px;
+  }
+
+  label, input[type=text] {
+    display: inline-block;
+  }
+
+  form label {
+    width: 80px;
+  }
+
+  form input[type=text] {
+    width: 250px;
+  }
+
+  input[type=text] {
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid #aef9d6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input[type=submit] {
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #3ff9e8a8;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+  }
+
+  /* FORM Mail */
+
+
+  .tipologia {
+      margin: 70px auto;
+      text-align: center;
+  }
+
+  .tabella {
+    margin: 0 auto;
+  }
+
+  .tabella table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+
+  thead {
+    text-align: center;
+    background-color: #9fdedc;
+  }
+
+  tbody {
+    background-color: #ffffff;
+  }
+
+  td {
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #b7f8e5
+  }
+
+
+  .screen-min{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px){
+
+  .img1{
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .img2{
+    width: 160px;
+  }
+
+  .settings-input{
+    height: 30px;
+    background-color: inherit;
+  }
+
+  svg{
+    display: none;
+  }
+
+  .opacity{
+    opacity: 0.9;
+  }
+  .border-radius{
+    border-radius: 5px;
+  }
+
+  .settings-a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px!important;
+  }
+
+  #inputGroupSelect01{
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+  }
+  #inputGroupSelect02{
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+  }
+  #inputGroupSelect03{
+    background-color: turquoise;
+    color: white;
+    border-radius: 5px;
+  }
+  #inputGroupSelect04{
+    background-color: skyblue;
+    color: white;
+    border-radius: 5px;
+  }
+  #inputGroupSelect05{
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .screen-max{
+    display: none;
+  }
+}

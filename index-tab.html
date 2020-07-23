@@ -1,0 +1,110 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- style -->
+  <link rel="stylesheet" href="css/style-1.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <!-- JS, Popper.js, and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <title>UniversiTouch</title>
+</head>
+<body>
+  <section class="container">
+    <nav class="nav_left">
+      <ul class="ul_left">
+        <li>
+          <a href="#">
+            <img src="img/italy.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/england.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav_right">
+      <ul class="ul_right">
+        <li>
+          <a href="">Login</a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section class="top_nav">
+    <div class="topnav">
+      <div id="myLinks">
+        <li>
+          <a href="#news">Profilo</a>
+        </li>
+        <li>
+          <a href="#contact">Dashboard</a>
+        </li>
+        <li>
+          <a href="#about">Messaggi</a>
+        </li>
+        <li>
+          <a href="#about">Documenti/Lavori</a>
+        </li>
+        <li>
+          <a href="#about">Libretto scolastico</a>
+        </li>
+      </div>
+    </div>
+  </section>
+    <section>
+      <div class="tipologia">
+          <h1>MEDICINA</h1>
+      </div>
+        <div class="tabella">
+            <table>
+            <thead>
+                <tr><td>Nome Istituto</td><td>Tipologia d'Istituto</td><td>Modalità di Accesso</td><td>Lingua</td><td>Costo</td><td>Città</td><td>Tipo di Laurea</td><td>Anni di Studio</td></tr>
+            </thead>
+            <tbody>
+                <tr><td>Università Romana</td><td>pubblica</td><td>Test d'ingresso</td><td>italiano</td><td>3000 €</td><td>Roma</td><td>Laurea</td><td>3</td></tr>
+                <tr><td>European University</td><td>privata</td><td>Iscrizione libera</td><td>inglese/francese</td><td>20000 €</td><td>Parigi</td><td>Laurea</td><td>3</td></tr>
+                <tr><td>North American University</td><td>privata</td><td>Test ACT/TOEFL</td><td>inglese</td><td>52000 €</td><td>New York</td><td>Bachelor</td><td>5</td></tr>
+                <tr><td>Australian Public University</td><td>pubblica</td><td>IELTS Academy</td><td>inglese</td><td>37000 €</td><td>Melbourne</td><td>Bachelor Degree</td><td>3</td></tr>
+                <tr><td>Kyoto Royal University</td><td>pubblica</td><td>Esame ammissione</td><td>inglese/giapponese</td><td>6000 €</td><td>Kyoto</td><td>Bachelor Degree</td><td>6</td></tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+  <section>
+    <div class="topnav">
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+</body>
+</html>
