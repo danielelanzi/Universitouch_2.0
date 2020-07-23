@@ -103,7 +103,7 @@
 
   <section class="container_form">
     <div class="box_form">
-      <form name="formmail" method="post" action="formmail.php" onsubmit="return controlloForm()">
+      <form name="formmail" method="post" action="php/formmail.php" onsubmit="return controlloForm()">
 
         <div class="">
           <h2>Form iscrizione</h2>
@@ -174,7 +174,7 @@
 
 	"use strict";
 	document.getElementById("cse-search-box").addEventListener("submit", function(e){
-		var words = {medicina: 'index-tab.html', altraparola: 'altrapagina'};
+		var words = {medicina: 'html/index-tab.html', altraparola: 'altrapagina'};
 		var page = words[e.target.medicina.value.trim()];
 		if(page){
 			top.location.href = page;
